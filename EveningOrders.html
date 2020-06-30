@@ -247,10 +247,10 @@
   var fromDate = url.searchParams.get('fromDate');
   var todate = url.searchParams.get('todate');
   if(fromDate == null){
-    fromDate = new Date(+new Date() + 86400000).toISOString().slice(0,10);
+    fromDate = new Date(+new Date()).toISOString().slice(0,10);
   }
   if(todate == null){
-    todate = new Date(+new Date() + 86400000).toISOString().slice(0,10);
+    todate = new Date(+new Date()).toISOString().slice(0,10);
   }
   $('.datepicker').datepicker({
     format: 'yyyy-mm-dd',
