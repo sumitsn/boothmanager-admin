@@ -139,7 +139,7 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
+              <!-- <div class="table-responsive"> -->
                 <table class="table table-bordered table-responsive" id="orderDataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
@@ -158,16 +158,13 @@
                       <th>पीला आधा किलो</th>
                       <th>पीला 1 किलो</th>
                       <th>छाछ</th>
-
-                    </tr>
-                      
-
+                      <th>कुल कैरेट</th>
                     </tr>
                   </thead>
                   <tbody id="evn_tbody">
                   </tbody>
                 </table>
-              </div>
+              <!-- </div> -->
             </div>
           </div>    
         </div>
@@ -275,6 +272,8 @@
             <td>${item.yellowHalfltr}</td>
             <td>${item.yellowOneltr}</td>
             <td>${item.chach}</td>
+            <td>${item.blueHalfltr+item.blueOneltr+item.blueSixltr+item.goldHalfltr+item.goldOneltr+item.goldSixltr+item.greenHalfltr+item.greenOneltr+item.yellowHalfltr+item.yellowOneltr+item.chach}</td>
+
           </tr>
       `
     });
